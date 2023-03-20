@@ -47,7 +47,7 @@ for i in range(map_height):
         else:
             for eqn in eqns.values():
                 if eqn(j, i-clearance) or eqn(j, i+clearance) or eqn(j-clearance, i) or eqn(j+clearance, i):
-                    pixels[i, j] = [192, 192, 192]  # clearance
+                    pixels[i, j] = [192, 192, 192]  
 
 def is_valid_node(node):
     x, y = node
